@@ -1,0 +1,17 @@
+version: '3.7'
+
+services: 
+  api:
+    image: mrizkiprmn/sequelize-lesson:master
+    ports: 
+      - 8888:8888
+    env_file: 
+      - /home/rizkipermana/Documents/oauth2-api/.env
+    deploy:
+      mode:
+      replicas: 4
+      resource:
+        limits:
+          cpus: "0.001"
+          memory: 50M
+      restart: always
