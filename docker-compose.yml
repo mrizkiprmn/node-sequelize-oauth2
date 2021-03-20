@@ -4,7 +4,7 @@ services:
   api:
     image: mrizkiprmn/sequelize-lesson:master
     ports: 
-      - 8888:8888
+      - 8181-8284:8888
     env_file: 
       - /home/rizkipermana/Documents/oauth2-api/.env
     deploy:
